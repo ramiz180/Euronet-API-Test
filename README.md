@@ -1,6 +1,6 @@
-# Financial Intelligence API Test Automation
+# Euronet API Test Automation
 
-Its an API test automation framework built with Rest Assured, Cucumber, and TestNG, designed for testing financial intelligence services.
+Its an API test automation framework built with Rest Assured, Cucumber, and TestNG, designed for testing Euronet services.
 
 1. Tech Stack
 
@@ -15,12 +15,12 @@ Its an API test automation framework built with Rest Assured, Cucumber, and Test
 ## Project Structure
 
 ```
-financial_intelligence/
+Euronet-API-Test/
 ├── .allure/                  # Allure report data
 ├── src/
 │   ├── main/                 # Main source code
 │   └── test/                 # Test source code
-│       ├── java/com/infinium/
+│       ├── java/com/euronet/
 │       │   ├── api/          # API client and request/response models
 │       │   ├── hooks/        # Cucumber hooks for test lifecycle
 │       │   ├── listeners/    # TestNG and custom listeners
@@ -47,7 +47,7 @@ financial_intelligence/
 1. **Clone the repository**:(Since it is in local so currently it will be not needed)
    ```bash
    git clone <repository-url>
-   cd financial_intelligence
+   cd Euronet-API-Test
    ```
 
 2. **Install dependencies**:
@@ -101,12 +101,12 @@ To add a new API test case, follow these simple steps:
    - Add tags like @smoke, @regression, etc. in the feature file(optional).
 
 2. **Implement Step Definitions**
-   - Go to `src/test/java/com/infinium/stepDefinitions/`
+   - Go to `src/test/java/com/euronet/stepDefinitions/`
    - Create a new Java class (e.g., `NewAPISteps.java`)
    - Implement the step definitions for your feature file
 
 3. **Add API Client Methods-API Logic / Endpoints** (if needed)
-   - Go to `src/test/java/com/infinium/api/`
+   - Go to `src/test/java/com/euronet/api/`
    - Add new request/response models if required
    - Add API client methods to interact with the endpoint
    - Refer the Endpoint from Routes class
@@ -150,4 +150,4 @@ Tests are written in Gherkin format (`.feature` files) and implemented using Cuc
 
 ## Contact
 For any further assistance, please feel free to connect me
--Ramiz Mondal
+-Manabi Mondal

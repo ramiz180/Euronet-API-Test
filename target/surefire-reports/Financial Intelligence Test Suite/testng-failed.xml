@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Financial Intelligence Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.infinium.listeners.TestListener"/>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="API Regression Tests(failed)" verbose="0">
+    <parameter name="environment" value="staging"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.infinium.runners.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="10 11"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.infinium.runners.TestRunner -->
+    </classes>
+  </test> <!-- API Regression Tests(failed) -->
+</suite> <!-- Failed suite [Financial Intelligence Test Suite] -->

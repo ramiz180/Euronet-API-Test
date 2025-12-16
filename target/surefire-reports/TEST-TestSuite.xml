@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="46.461" tests="12" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="G:\Selenium Project\Stan Automation\Euronet-API-Test\target\test-classes;G:\Selenium Project\Stan Automation\Euronet-API-Test\target\classes;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\Ramiz\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-picocontainer\7.15.0\cucumber-picocontainer-7.15.0.jar;C:\Users\Ramiz\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Ramiz\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Ramiz\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Ramiz\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Ramiz\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Ramiz\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Ramiz\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Ramiz\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Ramiz\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Ramiz\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Ramiz\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Ramiz\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\json-schema-validator\5.5.0\json-schema-validator-5.5.0.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Ramiz\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Ramiz\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Ramiz\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Ramiz\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Ramiz\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Ramiz\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Ramiz\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\Ramiz\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Ramiz\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Ramiz\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Ramiz\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\Ramiz\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Ramiz\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Ramiz\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Ramiz\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Ramiz\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Ramiz\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Ramiz\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\Ramiz\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.24.0\allure-cucumber7-jvm-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Users\Ramiz\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Ramiz\AppData\Local\Temp\surefire9223321844774639311\surefirebooter-20251216104758994_3.jar C:\Users\Ramiz\AppData\Local\Temp\surefire9223321844774639311 2025-12-16T10-47-58_234-jvmRun1 surefire-20251216104758994_1tmp surefire_0-20251216104758994_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="G:\Selenium Project\Stan Automation\Euronet-API-Test\target\test-classes;G:\Selenium Project\Stan Automation\Euronet-API-Test\target\classes;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\Ramiz\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-picocontainer\7.15.0\cucumber-picocontainer-7.15.0.jar;C:\Users\Ramiz\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Ramiz\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Ramiz\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Ramiz\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Ramiz\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Ramiz\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Ramiz\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Ramiz\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Ramiz\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Ramiz\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Ramiz\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Ramiz\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\json-schema-validator\5.5.0\json-schema-validator-5.5.0.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Ramiz\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Ramiz\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Ramiz\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Ramiz\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Ramiz\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Ramiz\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Ramiz\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\Ramiz\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Ramiz\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Ramiz\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Ramiz\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\Ramiz\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Ramiz\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Ramiz\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Ramiz\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Ramiz\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Ramiz\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Ramiz\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\Ramiz\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.24.0\allure-cucumber7-jvm-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Ramiz"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Users\Ramiz\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="G:\Selenium Project\Stan Automation\Euronet-API-Test"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Ramiz\AppData\Local\Temp\surefire9223321844774639311\surefirebooter-20251216104758994_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="cucumber.plugin" value="io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm,pretty"/>
+    <property name="java.runtime.version" value="17.0.9+9"/>
+    <property name="user.name" value="Ramiz"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.9+9"/>
+    <property name="localRepository" value="C:\Users\Ramiz\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\Ramiz\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.9"/>
+    <property name="user.dir" value="G:\Selenium Project\Stan Automation\Euronet-API-Test"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Ramiz\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;G:\oracle\product\10.2.0\db_2\bin;G:\oracle\product\10.2.0\db_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\nodejs\node_modules;C:\Program Files\apache-maven-3.9.11\bin;C:\Users\Ramiz\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin;C:\Users\Ramiz\AppData\Local\Microsoft\WindowsApps;;C:\Users\Ramiz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ramiz\.dotnet\tools;C:\Users\Ramiz\AppData\Roaming\npm;F:\Antigravity\bin;F:\Windsurf\bin;c:\Users\Ramiz\.antigravity\extensions\vscjava.vscode-java-debug-0.58.3-universal\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.9+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;EB-01 Fetch billers with valid auth&quot;, &quot;Fetch Billers Validation&quot;](1)" classname="com.infinium.runners.TestRunner" time="9.751">
+    <system-out><![CDATA[
+@FetchBillers @Regression
+Scenario: EB-01 Fetch billers with valid auth               # src/test/resources/features/FetchBillers.feature:4
+
+--------------------------------------------------------------------------------
+SCENARIO: EB-01 Fetch billers with valid auth
+--------------------------------------------------------------------------------
+  Given a valid x-vpc-key is provided                       # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
+Status Code: 200
+Response Body:
+{
+    "data": {
+        "billers": [
+            {
+                "id": "ART00MR000MR01",
+                "name": "Airtel Provider"
+            },
+            {
+                "id": "JIO00MR00NAT01",
+                "name": "Jio Provider"
+            },
+            {
+                "id": "BSNLMAH00NAT01",
+                "name": "BSNL Provider"
+            }
+        ]
+    },
+    "success": true
+}
+  When I send a GET request to fetch billers                # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
+  Then the fetch billers response status code should be 200 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
+  And the billers list should be present                    # com.infinium.stepDefinitions.FetchBillersSteps.the_billers_list_should_be_present()
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;EB-02 Validate response format&quot;, &quot;Fetch Billers Validation&quot;](2)" classname="com.infinium.runners.TestRunner" time="4.897">
+    <system-out><![CDATA[
+@FetchBillers @Regression
+Scenario: EB-02 Validate response format                    # src/test/resources/features/FetchBillers.feature:10
+
+--------------------------------------------------------------------------------
+SCENARIO: EB-02 Validate response format
+--------------------------------------------------------------------------------
+  Given a valid x-vpc-key is provided                       # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
+Status Code: 200
+Response Body:
+{
+    "data": {
+        "billers": [
+            {
+                "id": "ART00MR000MR01",
+                "name": "Airtel Provider"
+            },
+            {
+                "id": "JIO00MR00NAT01",
+                "name": "Jio Provider"
+            },
+            {
+                "id": "BSNLMAH00NAT01",
+                "name": "BSNL Provider"
+            }
+        ]
+    },
+    "success": true
+}
+  When I send a GET request to fetch billers                # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
+  Then the fetch billers response status code should be 200 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
+  And the response should be in JSON format                 # com.infinium.stepDefinitions.FetchBillersSteps.the_response_should_be_in_json_format()
+  And the response should contain a data array              # com.infinium.stepDefinitions.FetchBillersSteps.the_response_should_contain_a_data_array()
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;EB-03 Validate mandatory fields&quot;, &quot;Fetch Billers Validation&quot;](3)" classname="com.infinium.runners.TestRunner" time="2.317">
+    <system-out><![CDATA[
+@FetchBillers @Regression
+Scenario: EB-03 Validate mandatory fields                   # src/test/resources/features/FetchBillers.feature:17
+
+--------------------------------------------------------------------------------
+SCENARIO: EB-03 Validate mandatory fields
+--------------------------------------------------------------------------------
+  Given a valid x-vpc-key is provided                       # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
+Status Code: 200
+Response Body:
+{
+    "data": {
+        "billers": [
+            {
+                "id": "ART00MR000MR01",
+                "name": "Airtel Provider"
+            },
+            {
+                "id": "JIO00MR00NAT01",
+                "name": "Jio Provider"
+            },
+            {
+                "id": "BSNLMAH00NAT01",
+                "name": "BSNL Provider"
+            }
+        ]
+    },
+    "success": true
+}
+  When I send a GET request to fetch billers                # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
+  Then the fetch billers response status code should be 200 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
+  And each biller should contain "id" and "name"            # com.infinium.stepDefinitions.FetchBillersSteps.each_biller_should_contain_fields(java.lang.String,java.lang.String)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;EB-04 Multiple consecutive calls&quot;, &quot;Fetch Billers Validation&quot;](4)" classname="com.infinium.runners.TestRunner" time="2.78">
+    <system-out><![CDATA[
+@FetchBillers @Regression
+Scenario: EB-04 Multiple consecutive calls                # src/test/resources/features/FetchBillers.feature:23
+
+--------------------------------------------------------------------------------
+SCENARIO: EB-04 Multiple consecutive calls
+--------------------------------------------------------------------------------
+  Given a valid x-vpc-key is provided                     # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
+  When I send 5 consecutive GET requests to fetch billers # com.infinium.stepDefinitions.FetchBillersSteps.i_send_consecutive_get_requests(int)
+  Then every response status code should be 200           # com.infinium.stepDefinitions.FetchBillersSteps.every_response_status_code_should_be(int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;EB-05 Response consistency&quot;, &quot;Fetch Billers Validation&quot;](5)" classname="com.infinium.runners.TestRunner" time="2.313">
+    <system-out><![CDATA[
+@FetchBillers @Regression
+Scenario: EB-05 Response consistency                      # src/test/resources/features/FetchBillers.feature:28
+
+--------------------------------------------------------------------------------
+SCENARIO: EB-05 Response consistency
+--------------------------------------------------------------------------------
+  Given a valid x-vpc-key is provided                     # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
+  When I send 2 consecutive GET requests to fetch billers # com.infinium.stepDefinitions.FetchBillersSteps.i_send_consecutive_get_requests(int)
+  Then the responses should be consistent                 # com.infinium.stepDefinitions.FetchBillersSteps.the_responses_should_be_consistent()
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;EB-06 Missing auth key&quot;, &quot;Fetch Billers Validation&quot;](6)" classname="com.infinium.runners.TestRunner" time="2.167">
+    <system-out><![CDATA[
+@FetchBillers @Regression
+Scenario: EB-06 Missing auth key                            # src/test/resources/features/FetchBillers.feature:33
+
+--------------------------------------------------------------------------------
+SCENARIO: EB-06 Missing auth key
+--------------------------------------------------------------------------------
+  Given no x-vpc-key is provided                            # com.infinium.stepDefinitions.FetchBillersSteps.no_x_vpc_key_is_provided()
+Status Code: 401
+Response Body:
+{
+    "success": false,
+    "error": {
+        "code": "UNAUTHORIZED",
+        "details": {
+            
+        },
+        "error": "missing VPC token",
+        "message": "You are not authorized to access this resource"
+    }
+}
+  When I send a GET request to fetch billers                # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
+  Then the fetch billers response status code should be 401 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;EB-07 Invalid auth key&quot;, &quot;Fetch Billers Validation&quot;](7)" classname="com.infinium.runners.TestRunner" time="2.165">
+    <system-out><![CDATA[
+@FetchBillers @Regression
+Scenario: EB-07 Invalid auth key                            # src/test/resources/features/FetchBillers.feature:38
+
+--------------------------------------------------------------------------------
+SCENARIO: EB-07 Invalid auth key
+--------------------------------------------------------------------------------
+  Given an invalid x-vpc-key "INVALID_KEY_12345"            # com.infinium.stepDefinitions.FetchBillersSteps.an_invalid_x_vpc_key(java.lang.String)
+Status Code: 401
+Response Body:
+{
+    "success": false,
+    "error": {
+        "code": "UNAUTHORIZED",
+        "details": {
+            
+        },
+        "error": "invalid VPC token",
+        "message": "You are not authorized to access this resource"
+    }
+}
+  When I send a GET request to fetch billers                # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
+  Then the fetch billers response status code should be 401 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;EB-08 Invalid HTTP method&quot;, &quot;Fetch Billers Validation&quot;](8)" classname="com.infinium.runners.TestRunner" time="2.186">
+    <system-out><![CDATA[
+@FetchBillers @Regression
+Scenario: EB-08 Invalid HTTP method                         # src/test/resources/features/FetchBillers.feature:43
+
+--------------------------------------------------------------------------------
+SCENARIO: EB-08 Invalid HTTP method
+--------------------------------------------------------------------------------
+  Given a valid x-vpc-key is provided                       # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
+Status Code: 405
+Response Body:
+{
+    "error": true,
+    "message": "Method Not Allowed"
+}
+  When I send a POST request to fetch billers               # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_post_request_to_fetch_billers()
+  Then the fetch billers response status code should be 405 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;EB-09 Invalid endpoint&quot;, &quot;Fetch Billers Validation&quot;](9)" classname="com.infinium.runners.TestRunner" time="2.165">
+    <system-out><![CDATA[
+@FetchBillers @Regression
+Scenario: EB-09 Invalid endpoint                            # src/test/resources/features/FetchBillers.feature:48
+
+--------------------------------------------------------------------------------
+SCENARIO: EB-09 Invalid endpoint
+--------------------------------------------------------------------------------
+  Given a valid x-vpc-key is provided                       # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
+Status Code: 404
+Response Body:
+{
+    "error": true,
+    "message": "Cannot GET /store-shop-us/api/v1/inventory/euronet/list-billers/invalid"
+}
+  When I send a GET request to an invalid endpoint          # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_an_invalid_endpoint()
+  Then the fetch billers response status code should be 404 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;EB-10 Empty biller list check&quot;, &quot;Fetch Billers Validation&quot;](10)" classname="com.infinium.runners.TestRunner" time="2.192">
+    <system-out><![CDATA[
+@FetchBillers @Regression
+Scenario: EB-10 Empty biller list check                       # src/test/resources/features/FetchBillers.feature:53
+
+--------------------------------------------------------------------------------
+SCENARIO: EB-10 Empty biller list check
+--------------------------------------------------------------------------------
+  Given a valid x-vpc-key is provided                         # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
+Status Code: 200
+Response Body:
+{
+    "data": {
+        "billers": [
+            {
+                "id": "ART00MR000MR01",
+                "name": "Airtel Provider"
+            },
+            {
+                "id": "JIO00MR00NAT01",
+                "name": "Jio Provider"
+            },
+            {
+                "id": "BSNLMAH00NAT01",
+                "name": "BSNL Provider"
+            }
+        ]
+    },
+    "success": true
+}
+  When I send a GET request to fetch billers                  # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
+  Then the fetch billers response status code should be 200   # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
+  And the billers list should be a valid array (empty or not) # com.infinium.stepDefinitions.FetchBillersSteps.the_billers_list_should_be_valid_array()
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;EB-11 Duplicate billers check&quot;, &quot;Fetch Billers Validation&quot;](11)" classname="com.infinium.runners.TestRunner" time="2.296">
+    <failure message="expected [300] but found [200]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [300] but found [200]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(FetchBillersSteps.java:75)
+	at ✽.the fetch billers response status code should be 300(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:62)
+]]></failure>
+    <system-out><![CDATA[
+@FetchBillers @Regression
+Scenario: EB-11 Duplicate billers check                     # src/test/resources/features/FetchBillers.feature:59
+
+--------------------------------------------------------------------------------
+SCENARIO: EB-11 Duplicate billers check
+--------------------------------------------------------------------------------
+  Given a valid x-vpc-key is provided                       # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
+Status Code: 200
+Response Body:
+{
+    "data": {
+        "billers": [
+            {
+                "id": "ART00MR000MR01",
+                "name": "Airtel Provider"
+            },
+            {
+                "id": "JIO00MR00NAT01",
+                "name": "Jio Provider"
+            },
+            {
+                "id": "BSNLMAH00NAT01",
+                "name": "BSNL Provider"
+            }
+        ]
+    },
+    "success": true
+}
+  When I send a GET request to fetch billers                # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
+  Then the fetch billers response status code should be 300 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
+      java.lang.AssertionError: expected [300] but found [200]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(FetchBillersSteps.java:75)
+	at âœ½.the fetch billers response status code should be 300(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:62)
+
+  And no duplicate "id" values should be present            # com.infinium.stepDefinitions.FetchBillersSteps.no_duplicate_values_should_be_present(java.lang.String)
+--------------------------------------------------------------------------------
+RESULT: FAILED
+--------------------------------------------------------------------------------
+
+10:48:42.546 [TestNG-tests-1] ERROR com.infinium.hooks.TestHooks - Scenario failed: EB-11 Duplicate billers check
+10:48:44.582 [TestNG-tests-1] ERROR com.infinium.listeners.TestListener - Test failed: runScenario
+java.lang.AssertionError: expected [300] but found [200]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertEquals(Assert.java:132) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertEquals(Assert.java:1419) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertEquals(Assert.java:1383) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertEquals(Assert.java:1429) ~[testng-7.10.2.jar:7.10.2]
+	at com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(FetchBillersSteps.java:75) ~[test-classes/:?]
+	at ?.the fetch billers response status code should be 300(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:62) ~[?:?]
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;EB-12 Response time check&quot;, &quot;Fetch Billers Validation&quot;](12)" classname="com.infinium.runners.TestRunner" time="2.193">
+    <failure message="Response time 128ms exceeded limit 100ms expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response time 128ms exceeded limit 100ms expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.infinium.stepDefinitions.FetchBillersSteps.the_response_time_should_be_less_than(FetchBillersSteps.java:152)
+	at ✽.the response time should be less than 100 milliseconds(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:69)
+]]></failure>
+    <system-out><![CDATA[
+@FetchBillers @Regression
+Scenario: EB-12 Response time check                          # src/test/resources/features/FetchBillers.feature:65
+
+--------------------------------------------------------------------------------
+SCENARIO: EB-12 Response time check
+--------------------------------------------------------------------------------
+  Given a valid x-vpc-key is provided                        # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
+Status Code: 200
+Response Body:
+{
+    "data": {
+        "billers": [
+            {
+                "id": "ART00MR000MR01",
+                "name": "Airtel Provider"
+            },
+            {
+                "id": "JIO00MR00NAT01",
+                "name": "Jio Provider"
+            },
+            {
+                "id": "BSNLMAH00NAT01",
+                "name": "BSNL Provider"
+            }
+        ]
+    },
+    "success": true
+}
+  When I send a GET request to fetch billers                 # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
+  Then the fetch billers response status code should be 200  # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
+Response Time: 128ms
+  And the response time should be less than 100 milliseconds # com.infinium.stepDefinitions.FetchBillersSteps.the_response_time_should_be_less_than(int)
+      java.lang.AssertionError: Response time 128ms exceeded limit 100ms expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.infinium.stepDefinitions.FetchBillersSteps.the_response_time_should_be_less_than(FetchBillersSteps.java:152)
+	at âœ½.the response time should be less than 100 milliseconds(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:69)
+
+--------------------------------------------------------------------------------
+RESULT: FAILED
+--------------------------------------------------------------------------------
+
+10:48:44.777 [TestNG-tests-1] ERROR com.infinium.hooks.TestHooks - Scenario failed: EB-12 Response time check
+10:48:46.791 [TestNG-tests-1] ERROR com.infinium.listeners.TestListener - Test failed: runScenario
+java.lang.AssertionError: Response time 128ms exceeded limit 100ms expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.10.2.jar:7.10.2]
+	at com.infinium.stepDefinitions.FetchBillersSteps.the_response_time_should_be_less_than(FetchBillersSteps.java:152) ~[test-classes/:?]
+	at ?.the response time should be less than 100 milliseconds(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:69) ~[?:?]
+]]></system-out>
+  </testcase>
+</testsuite>

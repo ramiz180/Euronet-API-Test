@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>API Regression Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Dec 16 10:48:06 IST 2025</td>
+<td>Started on:</td><td>Thu Jan 08 22:56:33 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>40 seconds (40299 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46676 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,39 +76,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "EB-12 Response time check", "Fetch Billers Validation"</td>
-<td><div><pre>java.lang.AssertionError: Response time 128ms exceeded limit 100ms expected [true] but found [false]
-	at com.infinium.stepDefinitions.FetchBillersSteps.the_response_time_should_be_less_than(FetchBillersSteps.java:152)
-	at ?.the response time should be less than 100 milliseconds(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:69)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace187611049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace187611049'><pre>java.lang.AssertionError: Response time 128ms exceeded limit 100ms expected [true] but found [false]
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Missing API Key", "Store Purchase API"</td>
+<td><div><pre>java.lang.AssertionError: Expected status code 400 or 401 but found 200 expected [true] but found [false]
+	at com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be_or(StorePurchaseSteps.java:128)
+	at ?.the response status code should be 400 or 401(file:///C:/Selenium%20framework%20export/Manu/Euronet-API-Test/src/test/resources/features/StorePurchase.feature:52)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace309685726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace309685726'><pre>java.lang.AssertionError: Expected status code 400 or 401 but found 200 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.infinium.stepDefinitions.FetchBillersSteps.the_response_time_should_be_less_than(FetchBillersSteps.java:152)
-	at ?.the response time should be less than 100 milliseconds(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:69)
+	at com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be_or(StorePurchaseSteps.java:128)
+	at ?.the response status code should be 400 or 401(file:///C:/Selenium%20framework%20export/Manu/Euronet-API-Test/src/test/resources/features/StorePurchase.feature:52)
 </pre></div></td>
 <td>2</td>
-<td>com.infinium.runners.TestRunner@4bcaa195</td></tr>
-<tr>
-<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "EB-11 Duplicate billers check", "Fetch Billers Validation"</td>
-<td><div><pre>java.lang.AssertionError: expected [300] but found [200]
-	at com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(FetchBillersSteps.java:75)
-	at ?.the fetch billers response status code should be 300(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:62)
-... Removed 7 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace880933146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace880933146'><pre>java.lang.AssertionError: expected [300] but found [200]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(FetchBillersSteps.java:75)
-	at ?.the fetch billers response status code should be 300(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:62)
-</pre></div></td>
-<td>2</td>
-<td>com.infinium.runners.TestRunner@4bcaa195</td></tr>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -119,55 +100,75 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "EB-02 Validate response format", "Fetch Billers Validation"</td>
-<td></td>
-<td>4</td>
-<td>com.infinium.runners.TestRunner@4bcaa195</td></tr>
-<tr>
-<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "EB-08 Invalid HTTP method", "Fetch Billers Validation"</td>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject phone number with invalid length", "Store Purchase API"</td>
 <td></td>
 <td>2</td>
-<td>com.infinium.runners.TestRunner@4bcaa195</td></tr>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
 <tr>
-<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "EB-07 Invalid auth key", "Fetch Billers Validation"</td>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject redirect URL from untrusted domain", "Store Purchase API"</td>
 <td></td>
 <td>2</td>
-<td>com.infinium.runners.TestRunner@4bcaa195</td></tr>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
 <tr>
-<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "EB-04 Multiple consecutive calls", "Fetch Billers Validation"</td>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Block excessive store purchase attempts", "Store Purchase API"</td>
 <td></td>
 <td>2</td>
-<td>com.infinium.runners.TestRunner@4bcaa195</td></tr>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
 <tr>
-<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "EB-06 Missing auth key", "Fetch Billers Validation"</td>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Prevent duplicate store purchase request", "Store Purchase API"</td>
 <td></td>
 <td>2</td>
-<td>com.infinium.runners.TestRunner@4bcaa195</td></tr>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
 <tr>
-<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "EB-10 Empty biller list check", "Fetch Billers Validation"</td>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Direct Purchase (Happy Path)", "Store Purchase API"</td>
+<td></td>
+<td>10</td>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
+<tr>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject phone number with special characters", "Store Purchase API"</td>
 <td></td>
 <td>2</td>
-<td>com.infinium.runners.TestRunner@4bcaa195</td></tr>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
 <tr>
-<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "EB-03 Validate mandatory fields", "Fetch Billers Validation"</td>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject phone number with country code prefix", "Store Purchase API"</td>
 <td></td>
 <td>2</td>
-<td>com.infinium.runners.TestRunner@4bcaa195</td></tr>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
 <tr>
-<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "EB-05 Response consistency", "Fetch Billers Validation"</td>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Quantity Manipulation", "Store Purchase API"</td>
 <td></td>
 <td>2</td>
-<td>com.infinium.runners.TestRunner@4bcaa195</td></tr>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
 <tr>
-<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "EB-09 Invalid endpoint", "Fetch Billers Validation"</td>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject purchase with unsupported country code", "Store Purchase API"</td>
 <td></td>
 <td>2</td>
-<td>com.infinium.runners.TestRunner@4bcaa195</td></tr>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
 <tr>
-<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "EB-01 Fetch billers with valid auth", "Fetch Billers Validation"</td>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Detect rapid repeated purchase attempts using same phone number", "Store Purchase API"</td>
 <td></td>
-<td>9</td>
-<td>com.infinium.runners.TestRunner@4bcaa195</td></tr>
+<td>2</td>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
+<tr>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject unsupported PhonePe payment mode", "Store Purchase API"</td>
+<td></td>
+<td>2</td>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
+<tr>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Reject phone number containing alphabets", "Store Purchase API"</td>
+<td></td>
+<td>2</td>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
+<tr>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Unauthorized Access with Invalid Token", "Store Purchase API"</td>
+<td></td>
+<td>2</td>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
+<tr>
+<td title='com.infinium.runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.infinium.runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Amount Manipulation", "Store Purchase API"</td>
+<td></td>
+<td>2</td>
+<td>com.infinium.runners.TestRunner@5792c08c</td></tr>
 </table><p>
 </body>
 </html>

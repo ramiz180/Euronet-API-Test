@@ -1,7 +1,7 @@
-G:\Selenium Project\Stan Automation\Euronet-API-Test\src\test\java\com\infinium\stepDefinitions\FetchBillersSteps.java
-G:\Selenium Project\Stan Automation\Euronet-API-Test\src\test\java\com\infinium\api\FetchBillersEndpoints.java
-G:\Selenium Project\Stan Automation\Euronet-API-Test\src\test\java\com\infinium\api\Routes.java
-G:\Selenium Project\Stan Automation\Euronet-API-Test\src\test\java\com\infinium\hooks\TestHooks.java
-G:\Selenium Project\Stan Automation\Euronet-API-Test\src\test\java\com\infinium\listeners\TestListener.java
-G:\Selenium Project\Stan Automation\Euronet-API-Test\src\test\java\com\infinium\runners\TestRunner.java
-G:\Selenium Project\Stan Automation\Euronet-API-Test\src\test\java\com\infinium\utils\SpecBuilder.java
+C:\Selenium framework export\Manu\Euronet-API-Test\src\test\java\com\infinium\api\Routes.java
+C:\Selenium framework export\Manu\Euronet-API-Test\src\test\java\com\infinium\stepDefinitions\StorePurchaseSteps.java
+C:\Selenium framework export\Manu\Euronet-API-Test\src\test\java\com\infinium\api\StorePurchaseEndpoints.java
+C:\Selenium framework export\Manu\Euronet-API-Test\src\test\java\com\infinium\runners\TestRunner.java
+C:\Selenium framework export\Manu\Euronet-API-Test\src\test\java\com\infinium\listeners\TestListener.java
+C:\Selenium framework export\Manu\Euronet-API-Test\src\test\java\com\infinium\utils\SpecBuilder.java
+C:\Selenium framework export\Manu\Euronet-API-Test\src\test\java\com\infinium\hooks\TestHooks.java

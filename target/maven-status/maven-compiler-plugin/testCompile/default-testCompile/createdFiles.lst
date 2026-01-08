@@ -1,7 +1,7 @@
 com\infinium\api\Routes.class
 com\infinium\runners\TestRunner.class
+com\infinium\stepDefinitions\StorePurchaseSteps.class
 com\infinium\hooks\TestHooks.class
-com\infinium\stepDefinitions\FetchBillersSteps.class
+com\infinium\api\StorePurchaseEndpoints.class
 com\infinium\listeners\TestListener.class
 com\infinium\utils\SpecBuilder.class
-com\infinium\api\FetchBillersEndpoints.class

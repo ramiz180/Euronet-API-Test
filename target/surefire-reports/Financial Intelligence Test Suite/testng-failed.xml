@@ -12,7 +12,7 @@
       <class name="com.infinium.runners.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="10 11"/>
+          <include name="runScenario" invocation-numbers="4"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.infinium.runners.TestRunner -->

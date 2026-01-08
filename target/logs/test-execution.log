@@ -1,0 +1,71 @@
+2026-01-08 22:56:33.709 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test Suite API Regression Tests started
+2026-01-08 22:56:35.974 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:56:36.568 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Verify Direct Purchase (Happy Path)
+2026-01-08 22:56:44.524 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Verify Direct Purchase (Happy Path)
+2026-01-08 22:56:46.666 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:56:46.671 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:56:46.696 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Verify Unauthorized Access with Invalid Token
+2026-01-08 22:56:46.928 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Verify Unauthorized Access with Invalid Token
+2026-01-08 22:56:48.944 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:56:48.945 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:56:48.953 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Verify Amount Manipulation
+2026-01-08 22:56:49.098 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Verify Amount Manipulation
+2026-01-08 22:56:51.112 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:56:51.114 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:56:51.124 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Verify Quantity Manipulation
+2026-01-08 22:56:51.292 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Verify Quantity Manipulation
+2026-01-08 22:56:53.308 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:56:53.308 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:56:53.342 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Verify Missing API Key
+2026-01-08 22:56:53.974 [TestNG-tests-1] ERROR com.infinium.hooks.TestHooks - Scenario failed: Verify Missing API Key
+2026-01-08 22:56:55.989 [TestNG-tests-1] ERROR com.infinium.listeners.TestListener - Test failed: runScenario
+java.lang.AssertionError: Expected status code 400 or 401 but found 200 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.10.2.jar:7.10.2]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.10.2.jar:7.10.2]
+	at com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be_or(StorePurchaseSteps.java:128) ~[test-classes/:?]
+	at ?.the response status code should be 400 or 401(file:///C:/Selenium%20framework%20export/Manu/Euronet-API-Test/src/test/resources/features/StorePurchase.feature:52) ~[?:?]
+2026-01-08 22:56:56.025 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:56:56.046 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Prevent duplicate store purchase request
+2026-01-08 22:56:56.849 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Prevent duplicate store purchase request
+2026-01-08 22:56:58.854 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:56:58.857 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:56:58.865 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject purchase with unsupported country code
+2026-01-08 22:56:59.021 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject purchase with unsupported country code
+2026-01-08 22:57:01.029 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:57:01.031 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:57:01.039 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject redirect URL from untrusted domain
+2026-01-08 22:57:01.433 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject redirect URL from untrusted domain
+2026-01-08 22:57:03.445 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:57:03.447 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:57:03.460 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject unsupported PhonePe payment mode
+2026-01-08 22:57:03.628 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject unsupported PhonePe payment mode
+2026-01-08 22:57:05.647 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:57:05.648 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:57:05.656 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Block excessive store purchase attempts
+2026-01-08 22:57:06.495 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Block excessive store purchase attempts
+2026-01-08 22:57:08.501 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:57:08.502 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:57:08.509 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject phone number with invalid length
+2026-01-08 22:57:08.632 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject phone number with invalid length
+2026-01-08 22:57:10.647 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:57:10.648 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:57:10.658 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject phone number containing alphabets
+2026-01-08 22:57:10.793 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject phone number containing alphabets
+2026-01-08 22:57:12.810 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:57:12.811 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:57:12.817 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject phone number with special characters
+2026-01-08 22:57:12.964 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject phone number with special characters
+2026-01-08 22:57:14.973 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:57:14.973 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:57:14.979 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject phone number with country code prefix
+2026-01-08 22:57:15.137 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject phone number with country code prefix
+2026-01-08 22:57:17.154 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:57:17.157 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+2026-01-08 22:57:17.162 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Detect rapid repeated purchase attempts using same phone number
+2026-01-08 22:57:17.997 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Detect rapid repeated purchase attempts using same phone number
+2026-01-08 22:57:20.013 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+2026-01-08 22:57:20.355 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test Suite API Regression Tests finished
+2026-01-08 22:57:20.355 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Total tests: 1
+2026-01-08 22:57:20.356 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Passed: 14
+2026-01-08 22:57:20.356 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Failed: 1

@@ -1,116 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="37.968" tests="12" skipped="0" failures="2" errors="0">
-<testcase classname="Fetch Billers Validation" name="EB-01 Fetch billers with valid auth" time="8.636">
+<testsuite name="Cucumber" time="44.317" tests="15" skipped="0" failures="1" errors="0">
+<testcase classname="Store Purchase API" name="Verify Direct Purchase (Happy Path)" time="10.033">
 <system-out><![CDATA[
-Given a valid x-vpc-key is provided.........................................passed
-When I send a GET request to fetch billers..................................passed
-Then the fetch billers response status code should be 200...................passed
-And the billers list should be present......................................passed
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I set productId as "store_1000".........................................passed
+And I set amount as 999.....................................................passed
+And I set quantity as 1.....................................................passed
+And I set inventoryId as 839................................................passed
+And I set denominationId as 1...............................................passed
+And I set redirect URL......................................................passed
+And I set PhonePe payment mode as "NetBanking"..............................passed
+And I set PhonePe target app as "com.phonepe.app"...........................passed
+And I set additional parameters.............................................passed
+When I submit the store purchase request....................................passed
+Then the response status code should be 200.................................passed
+And the response should contain redirect URL................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Fetch Billers Validation" name="EB-02 Validate response format" time="4.86">
+<testcase classname="Store Purchase API" name="Verify Unauthorized Access with Invalid Token" time="2.252">
 <system-out><![CDATA[
-Given a valid x-vpc-key is provided.........................................passed
-When I send a GET request to fetch billers..................................passed
-Then the fetch billers response status code should be 200...................passed
-And the response should be in JSON format...................................passed
-And the response should contain a data array................................passed
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I set an invalid authorization token....................................passed
+When I submit the store purchase request....................................passed
+Then the response status code should be 400 or 401..........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Fetch Billers Validation" name="EB-03 Validate mandatory fields" time="2.301">
+<testcase classname="Store Purchase API" name="Verify Amount Manipulation" time="2.158">
 <system-out><![CDATA[
-Given a valid x-vpc-key is provided.........................................passed
-When I send a GET request to fetch billers..................................passed
-Then the fetch billers response status code should be 200...................passed
-And each biller should contain "id" and "name"..............................passed
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I set amount as 1.......................................................passed
+When I submit the store purchase request....................................passed
+Then the response status code should be 400.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Fetch Billers Validation" name="EB-04 Multiple consecutive calls" time="2.762">
+<testcase classname="Store Purchase API" name="Verify Quantity Manipulation" time="2.186">
 <system-out><![CDATA[
-Given a valid x-vpc-key is provided.........................................passed
-When I send 5 consecutive GET requests to fetch billers.....................passed
-Then every response status code should be 200...............................passed
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I set quantity as -1....................................................passed
+When I submit the store purchase request....................................passed
+Then the response status code should be 400.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Fetch Billers Validation" name="EB-05 Response consistency" time="2.304">
-<system-out><![CDATA[
-Given a valid x-vpc-key is provided.........................................passed
-When I send 2 consecutive GET requests to fetch billers.....................passed
-Then the responses should be consistent.....................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Fetch Billers Validation" name="EB-06 Missing auth key" time="2.162">
-<system-out><![CDATA[
-Given no x-vpc-key is provided..............................................passed
-When I send a GET request to fetch billers..................................passed
-Then the fetch billers response status code should be 401...................passed
-]]></system-out>
-</testcase>
-<testcase classname="Fetch Billers Validation" name="EB-07 Invalid auth key" time="2.14">
-<system-out><![CDATA[
-Given an invalid x-vpc-key "INVALID_KEY_12345"..............................passed
-When I send a GET request to fetch billers..................................passed
-Then the fetch billers response status code should be 401...................passed
-]]></system-out>
-</testcase>
-<testcase classname="Fetch Billers Validation" name="EB-08 Invalid HTTP method" time="2.169">
-<system-out><![CDATA[
-Given a valid x-vpc-key is provided.........................................passed
-When I send a POST request to fetch billers.................................passed
-Then the fetch billers response status code should be 405...................passed
-]]></system-out>
-</testcase>
-<testcase classname="Fetch Billers Validation" name="EB-09 Invalid endpoint" time="2.158">
-<system-out><![CDATA[
-Given a valid x-vpc-key is provided.........................................passed
-When I send a GET request to an invalid endpoint............................passed
-Then the fetch billers response status code should be 404...................passed
-]]></system-out>
-</testcase>
-<testcase classname="Fetch Billers Validation" name="EB-10 Empty biller list check" time="2.183">
-<system-out><![CDATA[
-Given a valid x-vpc-key is provided.........................................passed
-When I send a GET request to fetch billers..................................passed
-Then the fetch billers response status code should be 200...................passed
-And the billers list should be a valid array (empty or not).................passed
-]]></system-out>
-</testcase>
-<testcase classname="Fetch Billers Validation" name="EB-11 Duplicate billers check" time="2.227">
-<failure type="java.lang.AssertionError" message="expected [300] but found [200]">
-<![CDATA[java.lang.AssertionError: expected [300] but found [200]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(FetchBillersSteps.java:75)
-	at ?.the fetch billers response status code should be 300(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:62)
-]]>
-</failure>
-<system-out><![CDATA[
-Given a valid x-vpc-key is provided.........................................passed
-When I send a GET request to fetch billers..................................passed
-Then the fetch billers response status code should be 300...................failed
-And no duplicate "id" values should be present..............................skipped
-]]></system-out>
-</testcase>
-<testcase classname="Fetch Billers Validation" name="EB-12 Response time check" time="2.162">
-<failure type="java.lang.AssertionError" message="Response time 128ms exceeded limit 100ms expected [true] but found [false]">
-<![CDATA[java.lang.AssertionError: Response time 128ms exceeded limit 100ms expected [true] but found [false]
+<testcase classname="Store Purchase API" name="Verify Missing API Key" time="2.669">
+<failure type="java.lang.AssertionError" message="Expected status code 400 or 401 but found 200 expected [true] but found [false]">
+<![CDATA[java.lang.AssertionError: Expected status code 400 or 401 but found 200 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.infinium.stepDefinitions.FetchBillersSteps.the_response_time_should_be_less_than(FetchBillersSteps.java:152)
-	at ?.the response time should be less than 100 milliseconds(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:69)
+	at com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be_or(StorePurchaseSteps.java:128)
+	at ?.the response status code should be 400 or 401(file:///C:/Selenium%20framework%20export/Manu/Euronet-API-Test/src/test/resources/features/StorePurchase.feature:52)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given a valid x-vpc-key is provided.........................................passed
-When I send a GET request to fetch billers..................................passed
-Then the fetch billers response status code should be 200...................passed
-And the response time should be less than 100 milliseconds..................failed
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I remove API key........................................................passed
+When I submit the store purchase request....................................passed
+Then the response status code should be 400 or 401..........................failed
+]]></system-out>
+</testcase>
+<testcase classname="Store Purchase API" name="Prevent duplicate store purchase request" time="2.807">
+<system-out><![CDATA[
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+When I submit the store purchase request....................................passed
+And I immediately submit the same store purchase request again..............passed
+Then the second response status code should be 409 or 400...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Store Purchase API" name="Reject purchase with unsupported country code" time="2.164">
+<system-out><![CDATA[
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I set country code as "US"..............................................passed
+When I submit the store purchase request....................................passed
+Then the response status code should be 400.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Store Purchase API" name="Reject redirect URL from untrusted domain" time="2.404">
+<system-out><![CDATA[
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I set redirect URL as "https://evil-site.com/callback"..................passed
+When I submit the store purchase request....................................passed
+Then the response status code should be 400.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Store Purchase API" name="Reject unsupported PhonePe payment mode" time="2.191">
+<system-out><![CDATA[
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I set PhonePe payment mode as "Crypto"..................................passed
+When I submit the store purchase request....................................passed
+Then the response status code should be 400.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Store Purchase API" name="Block excessive store purchase attempts" time="2.846">
+<system-out><![CDATA[
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+When I submit the store purchase request multiple times rapidly.............passed
+Then the response status code should be 429 or 400..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Store Purchase API" name="Reject phone number with invalid length" time="2.137">
+<system-out><![CDATA[
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I set phone number as "98765"...........................................passed
+When I submit the store purchase request....................................passed
+Then the response status code should be 400.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Store Purchase API" name="Reject phone number containing alphabets" time="2.155">
+<system-out><![CDATA[
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I set phone number as "98AB543210"......................................passed
+When I submit the store purchase request....................................passed
+Then the response status code should be 400.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Store Purchase API" name="Reject phone number with special characters" time="2.154">
+<system-out><![CDATA[
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I set phone number as "98765@3210"......................................passed
+When I submit the store purchase request....................................passed
+Then the response status code should be 400.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Store Purchase API" name="Reject phone number with country code prefix" time="2.174">
+<system-out><![CDATA[
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I set phone number as "+919876543210"...................................passed
+When I submit the store purchase request....................................passed
+Then the response status code should be 400.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Store Purchase API" name="Detect rapid repeated purchase attempts using same phone number" time="2.85">
+<system-out><![CDATA[
+Given the Store Purchase API is available...................................passed
+Given I prepare a valid store purchase request..............................passed
+And I set phone number as "8765432138"......................................passed
+When I submit the store purchase request multiple times rapidly.............passed
+Then the response status code should be 429 or 400..........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

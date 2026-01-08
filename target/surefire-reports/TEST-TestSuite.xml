@@ -1,497 +1,527 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="46.461" tests="12" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="51.606" tests="15" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="G:\Selenium Project\Stan Automation\Euronet-API-Test\target\test-classes;G:\Selenium Project\Stan Automation\Euronet-API-Test\target\classes;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\Ramiz\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-picocontainer\7.15.0\cucumber-picocontainer-7.15.0.jar;C:\Users\Ramiz\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Ramiz\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Ramiz\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Ramiz\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Ramiz\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Ramiz\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Ramiz\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Ramiz\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Ramiz\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Ramiz\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Ramiz\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Ramiz\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\json-schema-validator\5.5.0\json-schema-validator-5.5.0.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Ramiz\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Ramiz\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Ramiz\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Ramiz\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Ramiz\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Ramiz\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Ramiz\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\Ramiz\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Ramiz\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Ramiz\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Ramiz\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\Ramiz\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Ramiz\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Ramiz\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Ramiz\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Ramiz\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Ramiz\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Ramiz\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\Ramiz\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.24.0\allure-cucumber7-jvm-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;"/>
-    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.class.path" value="C:\Selenium framework export\Manu\Euronet-API-Test\target\test-classes;C:\Selenium framework export\Manu\Euronet-API-Test\target\classes;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-picocontainer\7.15.0\cucumber-picocontainer-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\ramiz.mondal\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\ramiz.mondal\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\ramiz.mondal\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ramiz.mondal\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\ramiz.mondal\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\ramiz.mondal\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ramiz.mondal\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\ramiz.mondal\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ramiz.mondal\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\ramiz.mondal\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\ramiz.mondal\.m2\repository\io\rest-assured\json-schema-validator\5.5.0\json-schema-validator-5.5.0.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\ramiz.mondal\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\ramiz.mondal\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\ramiz.mondal\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\ramiz.mondal\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ramiz.mondal\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ramiz.mondal\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\ramiz.mondal\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\ramiz.mondal\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\ramiz.mondal\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\ramiz.mondal\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.24.0\allure-cucumber7-jvm-2.24.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="os.name" value="Windows 10"/>
+    <property name="os.name" value="Windows 11"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
-    <property name="sun.boot.library.path" value="C:\Users\Ramiz\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Ramiz\AppData\Local\Temp\surefire9223321844774639311\surefirebooter-20251216104758994_3.jar C:\Users\Ramiz\AppData\Local\Temp\surefire9223321844774639311 2025-12-16T10-47-58_234-jvmRun1 surefire-20251216104758994_1tmp surefire_0-20251216104758994_2tmp"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.14\bin"/>
+    <property name="sun.java.command" value="C:\Users\ramiz.mondal\AppData\Local\Temp\surefire11069426627959220814\surefirebooter-20260108225627039_3.jar C:\Users\ramiz.mondal\AppData\Local\Temp\surefire11069426627959220814 2026-01-08T22-56-26_530-jvmRun1 surefire-20260108225627039_1tmp surefire_0-20260108225627039_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="G:\Selenium Project\Stan Automation\Euronet-API-Test\target\test-classes;G:\Selenium Project\Stan Automation\Euronet-API-Test\target\classes;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\Ramiz\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\cucumber-picocontainer\7.15.0\cucumber-picocontainer-7.15.0.jar;C:\Users\Ramiz\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Ramiz\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Ramiz\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Ramiz\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Ramiz\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Ramiz\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Ramiz\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Ramiz\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Ramiz\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Ramiz\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Ramiz\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Ramiz\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Ramiz\.m2\repository\io\rest-assured\json-schema-validator\5.5.0\json-schema-validator-5.5.0.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Ramiz\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Ramiz\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Ramiz\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Ramiz\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Ramiz\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Ramiz\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Ramiz\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Ramiz\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\Ramiz\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Ramiz\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Ramiz\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Ramiz\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\Ramiz\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Ramiz\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Ramiz\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Ramiz\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Ramiz\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Ramiz\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Ramiz\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\Ramiz\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Ramiz\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.24.0\allure-cucumber7-jvm-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\Ramiz\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Selenium framework export\Manu\Euronet-API-Test\target\test-classes;C:\Selenium framework export\Manu\Euronet-API-Test\target\classes;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\cucumber-picocontainer\7.15.0\cucumber-picocontainer-7.15.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\ramiz.mondal\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\ramiz.mondal\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\ramiz.mondal\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\ramiz.mondal\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\ramiz.mondal\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\ramiz.mondal\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\ramiz.mondal\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\ramiz.mondal\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\ramiz.mondal\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\ramiz.mondal\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\ramiz.mondal\.m2\repository\io\rest-assured\json-schema-validator\5.5.0\json-schema-validator-5.5.0.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\ramiz.mondal\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\ramiz.mondal\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\ramiz.mondal\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\ramiz.mondal\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\ramiz.mondal\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\ramiz.mondal\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ramiz.mondal\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\ramiz.mondal\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\ramiz.mondal\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\ramiz.mondal\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\ramiz.mondal\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\ramiz.mondal\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\ramiz.mondal\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\qameta\allure\allure-cucumber7-jvm\2.24.0\allure-cucumber7-jvm-2.24.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\ramiz.mondal\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\Ramiz"/>
+    <property name="user.home" value="C:\Users\ramiz.mondal"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2023-10-17"/>
-    <property name="java.home" value="C:\Users\Ramiz\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.14"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="G:\Selenium Project\Stan Automation\Euronet-API-Test"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="basedir" value="C:\Selenium framework export\Manu\Euronet-API-Test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Ramiz\AppData\Local\Temp\surefire9223321844774639311\surefirebooter-20251216104758994_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ramiz.mondal\AppData\Local\Temp\surefire11069426627959220814\surefirebooter-20260108225627039_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="cucumber.plugin" value="io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm,pretty"/>
-    <property name="java.runtime.version" value="17.0.9+9"/>
-    <property name="user.name" value="Ramiz"/>
+    <property name="java.runtime.version" value="17.0.14+7-LTS"/>
+    <property name="user.name" value="ramiz.mondal"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="Cp1252"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Temurin-17.0.9+9"/>
-    <property name="localRepository" value="C:\Users\Ramiz\.m2\repository"/>
-    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
-    <property name="java.io.tmpdir" value="C:\Users\Ramiz\AppData\Local\Temp\"/>
-    <property name="java.version" value="17.0.9"/>
-    <property name="user.dir" value="G:\Selenium Project\Stan Automation\Euronet-API-Test"/>
+    <property name="java.vendor.version" value="Microsoft-10800295"/>
+    <property name="localRepository" value="C:\Users\ramiz.mondal\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\RAMIZ~1.MON\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.14"/>
+    <property name="cucumber.filter.tags" value="@StorePurchase"/>
+    <property name="user.dir" value="C:\Selenium framework export\Manu\Euronet-API-Test"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\Ramiz\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;G:\oracle\product\10.2.0\db_2\bin;G:\oracle\product\10.2.0\db_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\nodejs\node_modules;C:\Program Files\apache-maven-3.9.11\bin;C:\Users\Ramiz\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin;C:\Users\Ramiz\AppData\Local\Microsoft\WindowsApps;;C:\Users\Ramiz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Ramiz\.dotnet\tools;C:\Users\Ramiz\AppData\Roaming\npm;F:\Antigravity\bin;F:\Windsurf\bin;c:\Users\Ramiz\.antigravity\extensions\vscjava.vscode-java-debug-0.58.3-universal\bundled\scripts\noConfigScripts;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.14\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;%JAVA_HOME%\bin;C:\Program Files\Git\cmd;C:\Users\ramiz.mondal\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\ramiz.mondal\AppData\Local\Programs\Python\Python313\;C:\Users\ramiz.mondal\AppData\Local\Programs\Python\Launcher\;C:\Users\ramiz.mondal\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-17.0.14\bin;C:\Maven-3.9.10\bin;C:\Users\ramiz.mondal\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ramiz.mondal\AppData\Local\Programs\PyCharm 2025.2.3\bin;C:\Users\ramiz.mondal\AppData\Local\Programs\Windsurf\bin;C:\Users\ramiz.mondal\AppData\Local\Programs\Antigravity\bin;C:\Node\node-v24.11.1-win-x64\node-v24.11.1-win-x64;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.vendor" value="Eclipse Adoptium"/>
-    <property name="java.vm.version" value="17.0.9+9"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="17.0.14+7-LTS"/>
+    <property name="java.specification.maintenance.version" value="1"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="runScenario[&quot;EB-01 Fetch billers with valid auth&quot;, &quot;Fetch Billers Validation&quot;](1)" classname="com.infinium.runners.TestRunner" time="9.751">
-    <system-out><![CDATA[
-@FetchBillers @Regression
-Scenario: EB-01 Fetch billers with valid auth               # src/test/resources/features/FetchBillers.feature:4
+  <testcase name="runScenario[&quot;Verify Direct Purchase (Happy Path)&quot;, &quot;Store Purchase API&quot;](1)" classname="com.infinium.runners.TestRunner" time="10.695">
+    <system-out><![CDATA[22:56:33.709 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test Suite API Regression Tests started
+22:56:35.974 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @HappyPath
+Scenario: Verify Direct Purchase (Happy Path)       # src/test/resources/features/StorePurchase.feature:11
 
 --------------------------------------------------------------------------------
-SCENARIO: EB-01 Fetch billers with valid auth
+SCENARIO: Verify Direct Purchase (Happy Path)
 --------------------------------------------------------------------------------
-  Given a valid x-vpc-key is provided                       # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
-Status Code: 200
-Response Body:
+22:56:36.568 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Verify Direct Purchase (Happy Path)
+  Given the Store Purchase API is available         # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request    # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I set productId as "store_1000"               # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_product_id_as(java.lang.String)
+  And I set amount as 999                           # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_amount_as(int)
+  And I set quantity as 1                           # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_quantity_as(int)
+  And I set inventoryId as 839                      # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_inventory_id_as(int)
+  And I set denominationId as 1                     # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_denomination_id_as(int)
+  And I set redirect URL                            # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_redirect_url()
+  And I set PhonePe payment mode as "NetBanking"    # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_phone_pe_payment_mode_as(java.lang.String)
+  And I set PhonePe target app as "com.phonepe.app" # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_phone_pe_target_app_as(java.lang.String)
+  And I set additional parameters                   # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_additional_parameters()
+Response Status: 200
 {
-    "data": {
-        "billers": [
-            {
-                "id": "ART00MR000MR01",
-                "name": "Airtel Provider"
-            },
-            {
-                "id": "JIO00MR00NAT01",
-                "name": "Jio Provider"
-            },
-            {
-                "id": "BSNLMAH00NAT01",
-                "name": "BSNL Provider"
-            }
-        ]
-    },
-    "success": true
+    "merchantTransactionId": "2555d26c-0bdd-483f-9c3a-94dc2508c090",
+    "orderId": 11446,
+    "paymentGatewayType": "cashfree",
+    "redirectUrl": "https://payments-test.cashfree.com/links/G9on6rqsmvlg_AAAAAACdhWo",
+    "token": ""
 }
-  When I send a GET request to fetch billers                # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
-  Then the fetch billers response status code should be 200 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
-  And the billers list should be present                    # com.infinium.stepDefinitions.FetchBillersSteps.the_billers_list_should_be_present()
+  When I submit the store purchase request          # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+  Then the response status code should be 200       # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be(int)
+  And the response should contain redirect URL      # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_should_contain_redirect_url()
 --------------------------------------------------------------------------------
 RESULT: PASSED
 --------------------------------------------------------------------------------
 
+22:56:44.524 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Verify Direct Purchase (Happy Path)
+22:56:46.666 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;EB-02 Validate response format&quot;, &quot;Fetch Billers Validation&quot;](2)" classname="com.infinium.runners.TestRunner" time="4.897">
-    <system-out><![CDATA[
-@FetchBillers @Regression
-Scenario: EB-02 Validate response format                    # src/test/resources/features/FetchBillers.feature:10
+  <testcase name="runScenario[&quot;Verify Unauthorized Access with Invalid Token&quot;, &quot;Store Purchase API&quot;](2)" classname="com.infinium.runners.TestRunner" time="2.272">
+    <system-out><![CDATA[22:56:46.671 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Security
+Scenario: Verify Unauthorized Access with Invalid Token # src/test/resources/features/StorePurchase.feature:27
 
 --------------------------------------------------------------------------------
-SCENARIO: EB-02 Validate response format
+SCENARIO: Verify Unauthorized Access with Invalid Token
 --------------------------------------------------------------------------------
-  Given a valid x-vpc-key is provided                       # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
-Status Code: 200
-Response Body:
+22:56:46.696 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Verify Unauthorized Access with Invalid Token
+  Given the Store Purchase API is available             # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request        # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I set an invalid authorization token              # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_an_invalid_authorization_token()
+Response Status: 400
 {
-    "data": {
-        "billers": [
-            {
-                "id": "ART00MR000MR01",
-                "name": "Airtel Provider"
-            },
-            {
-                "id": "JIO00MR00NAT01",
-                "name": "Jio Provider"
-            },
-            {
-                "id": "BSNLMAH00NAT01",
-                "name": "BSNL Provider"
-            }
-        ]
-    },
-    "success": true
+    "error": "Unauthorized",
+    "message": "Unauthorized",
+    "statusCode": 401
 }
-  When I send a GET request to fetch billers                # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
-  Then the fetch billers response status code should be 200 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
-  And the response should be in JSON format                 # com.infinium.stepDefinitions.FetchBillersSteps.the_response_should_be_in_json_format()
-  And the response should contain a data array              # com.infinium.stepDefinitions.FetchBillersSteps.the_response_should_contain_a_data_array()
+  When I submit the store purchase request              # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+  Then the response status code should be 400 or 401    # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be_or(int,int)
 --------------------------------------------------------------------------------
 RESULT: PASSED
 --------------------------------------------------------------------------------
 
+22:56:46.928 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Verify Unauthorized Access with Invalid Token
+22:56:48.944 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;EB-03 Validate mandatory fields&quot;, &quot;Fetch Billers Validation&quot;](3)" classname="com.infinium.runners.TestRunner" time="2.317">
-    <system-out><![CDATA[
-@FetchBillers @Regression
-Scenario: EB-03 Validate mandatory fields                   # src/test/resources/features/FetchBillers.feature:17
+  <testcase name="runScenario[&quot;Verify Amount Manipulation&quot;, &quot;Store Purchase API&quot;](3)" classname="com.infinium.runners.TestRunner" time="2.169">
+    <system-out><![CDATA[22:56:48.945 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Fraud
+Scenario: Verify Amount Manipulation             # src/test/resources/features/StorePurchase.feature:34
 
 --------------------------------------------------------------------------------
-SCENARIO: EB-03 Validate mandatory fields
+SCENARIO: Verify Amount Manipulation
 --------------------------------------------------------------------------------
-  Given a valid x-vpc-key is provided                       # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
-Status Code: 200
-Response Body:
+22:56:48.953 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Verify Amount Manipulation
+  Given the Store Purchase API is available      # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I set amount as 1                          # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_amount_as(int)
+Response Status: 400
 {
-    "data": {
-        "billers": [
-            {
-                "id": "ART00MR000MR01",
-                "name": "Airtel Provider"
-            },
-            {
-                "id": "JIO00MR00NAT01",
-                "name": "Jio Provider"
-            },
-            {
-                "id": "BSNLMAH00NAT01",
-                "name": "BSNL Provider"
-            }
-        ]
-    },
-    "success": true
+    "error": "invalid purchase",
+    "statusCode": 400
 }
-  When I send a GET request to fetch billers                # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
-  Then the fetch billers response status code should be 200 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
-  And each biller should contain "id" and "name"            # com.infinium.stepDefinitions.FetchBillersSteps.each_biller_should_contain_fields(java.lang.String,java.lang.String)
+  When I submit the store purchase request       # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+  Then the response status code should be 400    # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be(int)
 --------------------------------------------------------------------------------
 RESULT: PASSED
 --------------------------------------------------------------------------------
 
+22:56:49.098 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Verify Amount Manipulation
+22:56:51.112 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;EB-04 Multiple consecutive calls&quot;, &quot;Fetch Billers Validation&quot;](4)" classname="com.infinium.runners.TestRunner" time="2.78">
-    <system-out><![CDATA[
-@FetchBillers @Regression
-Scenario: EB-04 Multiple consecutive calls                # src/test/resources/features/FetchBillers.feature:23
+  <testcase name="runScenario[&quot;Verify Quantity Manipulation&quot;, &quot;Store Purchase API&quot;](4)" classname="com.infinium.runners.TestRunner" time="2.194">
+    <system-out><![CDATA[22:56:51.114 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Fraud
+Scenario: Verify Quantity Manipulation           # src/test/resources/features/StorePurchase.feature:41
 
 --------------------------------------------------------------------------------
-SCENARIO: EB-04 Multiple consecutive calls
+SCENARIO: Verify Quantity Manipulation
 --------------------------------------------------------------------------------
-  Given a valid x-vpc-key is provided                     # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
-  When I send 5 consecutive GET requests to fetch billers # com.infinium.stepDefinitions.FetchBillersSteps.i_send_consecutive_get_requests(int)
-  Then every response status code should be 200           # com.infinium.stepDefinitions.FetchBillersSteps.every_response_status_code_should_be(int)
---------------------------------------------------------------------------------
-RESULT: PASSED
---------------------------------------------------------------------------------
-
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;EB-05 Response consistency&quot;, &quot;Fetch Billers Validation&quot;](5)" classname="com.infinium.runners.TestRunner" time="2.313">
-    <system-out><![CDATA[
-@FetchBillers @Regression
-Scenario: EB-05 Response consistency                      # src/test/resources/features/FetchBillers.feature:28
-
---------------------------------------------------------------------------------
-SCENARIO: EB-05 Response consistency
---------------------------------------------------------------------------------
-  Given a valid x-vpc-key is provided                     # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
-  When I send 2 consecutive GET requests to fetch billers # com.infinium.stepDefinitions.FetchBillersSteps.i_send_consecutive_get_requests(int)
-  Then the responses should be consistent                 # com.infinium.stepDefinitions.FetchBillersSteps.the_responses_should_be_consistent()
---------------------------------------------------------------------------------
-RESULT: PASSED
---------------------------------------------------------------------------------
-
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;EB-06 Missing auth key&quot;, &quot;Fetch Billers Validation&quot;](6)" classname="com.infinium.runners.TestRunner" time="2.167">
-    <system-out><![CDATA[
-@FetchBillers @Regression
-Scenario: EB-06 Missing auth key                            # src/test/resources/features/FetchBillers.feature:33
-
---------------------------------------------------------------------------------
-SCENARIO: EB-06 Missing auth key
---------------------------------------------------------------------------------
-  Given no x-vpc-key is provided                            # com.infinium.stepDefinitions.FetchBillersSteps.no_x_vpc_key_is_provided()
-Status Code: 401
-Response Body:
+22:56:51.124 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Verify Quantity Manipulation
+  Given the Store Purchase API is available      # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I set quantity as -1                       # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_quantity_as(int)
+Response Status: 400
 {
-    "success": false,
-    "error": {
-        "code": "UNAUTHORIZED",
-        "details": {
-            
-        },
-        "error": "missing VPC token",
-        "message": "You are not authorized to access this resource"
-    }
+    "error": "Please try again after sometime",
+    "message": "Please try again after sometime",
+    "statusCode": 400
 }
-  When I send a GET request to fetch billers                # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
-  Then the fetch billers response status code should be 401 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
+  When I submit the store purchase request       # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+  Then the response status code should be 400    # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be(int)
 --------------------------------------------------------------------------------
 RESULT: PASSED
 --------------------------------------------------------------------------------
 
+22:56:51.292 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Verify Quantity Manipulation
+22:56:53.308 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;EB-07 Invalid auth key&quot;, &quot;Fetch Billers Validation&quot;](7)" classname="com.infinium.runners.TestRunner" time="2.165">
-    <system-out><![CDATA[
-@FetchBillers @Regression
-Scenario: EB-07 Invalid auth key                            # src/test/resources/features/FetchBillers.feature:38
-
---------------------------------------------------------------------------------
-SCENARIO: EB-07 Invalid auth key
---------------------------------------------------------------------------------
-  Given an invalid x-vpc-key "INVALID_KEY_12345"            # com.infinium.stepDefinitions.FetchBillersSteps.an_invalid_x_vpc_key(java.lang.String)
-Status Code: 401
-Response Body:
-{
-    "success": false,
-    "error": {
-        "code": "UNAUTHORIZED",
-        "details": {
-            
-        },
-        "error": "invalid VPC token",
-        "message": "You are not authorized to access this resource"
-    }
-}
-  When I send a GET request to fetch billers                # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
-  Then the fetch billers response status code should be 401 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
---------------------------------------------------------------------------------
-RESULT: PASSED
---------------------------------------------------------------------------------
-
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;EB-08 Invalid HTTP method&quot;, &quot;Fetch Billers Validation&quot;](8)" classname="com.infinium.runners.TestRunner" time="2.186">
-    <system-out><![CDATA[
-@FetchBillers @Regression
-Scenario: EB-08 Invalid HTTP method                         # src/test/resources/features/FetchBillers.feature:43
-
---------------------------------------------------------------------------------
-SCENARIO: EB-08 Invalid HTTP method
---------------------------------------------------------------------------------
-  Given a valid x-vpc-key is provided                       # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
-Status Code: 405
-Response Body:
-{
-    "error": true,
-    "message": "Method Not Allowed"
-}
-  When I send a POST request to fetch billers               # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_post_request_to_fetch_billers()
-  Then the fetch billers response status code should be 405 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
---------------------------------------------------------------------------------
-RESULT: PASSED
---------------------------------------------------------------------------------
-
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;EB-09 Invalid endpoint&quot;, &quot;Fetch Billers Validation&quot;](9)" classname="com.infinium.runners.TestRunner" time="2.165">
-    <system-out><![CDATA[
-@FetchBillers @Regression
-Scenario: EB-09 Invalid endpoint                            # src/test/resources/features/FetchBillers.feature:48
-
---------------------------------------------------------------------------------
-SCENARIO: EB-09 Invalid endpoint
---------------------------------------------------------------------------------
-  Given a valid x-vpc-key is provided                       # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
-Status Code: 404
-Response Body:
-{
-    "error": true,
-    "message": "Cannot GET /store-shop-us/api/v1/inventory/euronet/list-billers/invalid"
-}
-  When I send a GET request to an invalid endpoint          # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_an_invalid_endpoint()
-  Then the fetch billers response status code should be 404 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
---------------------------------------------------------------------------------
-RESULT: PASSED
---------------------------------------------------------------------------------
-
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;EB-10 Empty biller list check&quot;, &quot;Fetch Billers Validation&quot;](10)" classname="com.infinium.runners.TestRunner" time="2.192">
-    <system-out><![CDATA[
-@FetchBillers @Regression
-Scenario: EB-10 Empty biller list check                       # src/test/resources/features/FetchBillers.feature:53
-
---------------------------------------------------------------------------------
-SCENARIO: EB-10 Empty biller list check
---------------------------------------------------------------------------------
-  Given a valid x-vpc-key is provided                         # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
-Status Code: 200
-Response Body:
-{
-    "data": {
-        "billers": [
-            {
-                "id": "ART00MR000MR01",
-                "name": "Airtel Provider"
-            },
-            {
-                "id": "JIO00MR00NAT01",
-                "name": "Jio Provider"
-            },
-            {
-                "id": "BSNLMAH00NAT01",
-                "name": "BSNL Provider"
-            }
-        ]
-    },
-    "success": true
-}
-  When I send a GET request to fetch billers                  # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
-  Then the fetch billers response status code should be 200   # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
-  And the billers list should be a valid array (empty or not) # com.infinium.stepDefinitions.FetchBillersSteps.the_billers_list_should_be_valid_array()
---------------------------------------------------------------------------------
-RESULT: PASSED
---------------------------------------------------------------------------------
-
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;EB-11 Duplicate billers check&quot;, &quot;Fetch Billers Validation&quot;](11)" classname="com.infinium.runners.TestRunner" time="2.296">
-    <failure message="expected [300] but found [200]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [300] but found [200]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(FetchBillersSteps.java:75)
-	at ✽.the fetch billers response status code should be 300(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:62)
-]]></failure>
-    <system-out><![CDATA[
-@FetchBillers @Regression
-Scenario: EB-11 Duplicate billers check                     # src/test/resources/features/FetchBillers.feature:59
-
---------------------------------------------------------------------------------
-SCENARIO: EB-11 Duplicate billers check
---------------------------------------------------------------------------------
-  Given a valid x-vpc-key is provided                       # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
-Status Code: 200
-Response Body:
-{
-    "data": {
-        "billers": [
-            {
-                "id": "ART00MR000MR01",
-                "name": "Airtel Provider"
-            },
-            {
-                "id": "JIO00MR00NAT01",
-                "name": "Jio Provider"
-            },
-            {
-                "id": "BSNLMAH00NAT01",
-                "name": "BSNL Provider"
-            }
-        ]
-    },
-    "success": true
-}
-  When I send a GET request to fetch billers                # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
-  Then the fetch billers response status code should be 300 # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
-      java.lang.AssertionError: expected [300] but found [200]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(FetchBillersSteps.java:75)
-	at âœ½.the fetch billers response status code should be 300(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:62)
-
-  And no duplicate "id" values should be present            # com.infinium.stepDefinitions.FetchBillersSteps.no_duplicate_values_should_be_present(java.lang.String)
---------------------------------------------------------------------------------
-RESULT: FAILED
---------------------------------------------------------------------------------
-
-10:48:42.546 [TestNG-tests-1] ERROR com.infinium.hooks.TestHooks - Scenario failed: EB-11 Duplicate billers check
-10:48:44.582 [TestNG-tests-1] ERROR com.infinium.listeners.TestListener - Test failed: runScenario
-java.lang.AssertionError: expected [300] but found [200]
-	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.10.2.jar:7.10.2]
-	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.10.2.jar:7.10.2]
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150) ~[testng-7.10.2.jar:7.10.2]
-	at org.testng.Assert.assertEquals(Assert.java:132) ~[testng-7.10.2.jar:7.10.2]
-	at org.testng.Assert.assertEquals(Assert.java:1419) ~[testng-7.10.2.jar:7.10.2]
-	at org.testng.Assert.assertEquals(Assert.java:1383) ~[testng-7.10.2.jar:7.10.2]
-	at org.testng.Assert.assertEquals(Assert.java:1429) ~[testng-7.10.2.jar:7.10.2]
-	at com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(FetchBillersSteps.java:75) ~[test-classes/:?]
-	at ?.the fetch billers response status code should be 300(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:62) ~[?:?]
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;EB-12 Response time check&quot;, &quot;Fetch Billers Validation&quot;](12)" classname="com.infinium.runners.TestRunner" time="2.193">
-    <failure message="Response time 128ms exceeded limit 100ms expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response time 128ms exceeded limit 100ms expected [true] but found [false]
+  <testcase name="runScenario[&quot;Verify Missing API Key&quot;, &quot;Store Purchase API&quot;](5)" classname="com.infinium.runners.TestRunner" time="2.717">
+    <failure message="Expected status code 400 or 401 but found 200 expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Expected status code 400 or 401 but found 200 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.infinium.stepDefinitions.FetchBillersSteps.the_response_time_should_be_less_than(FetchBillersSteps.java:152)
-	at ✽.the response time should be less than 100 milliseconds(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:69)
+	at com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be_or(StorePurchaseSteps.java:128)
+	at ✽.the response status code should be 400 or 401(file:///C:/Selenium%20framework%20export/Manu/Euronet-API-Test/src/test/resources/features/StorePurchase.feature:52)
 ]]></failure>
-    <system-out><![CDATA[
-@FetchBillers @Regression
-Scenario: EB-12 Response time check                          # src/test/resources/features/FetchBillers.feature:65
+    <system-out><![CDATA[22:56:53.308 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Security
+Scenario: Verify Missing API Key                     # src/test/resources/features/StorePurchase.feature:48
 
 --------------------------------------------------------------------------------
-SCENARIO: EB-12 Response time check
+SCENARIO: Verify Missing API Key
 --------------------------------------------------------------------------------
-  Given a valid x-vpc-key is provided                        # com.infinium.stepDefinitions.FetchBillersSteps.a_valid_x_vpc_key_is_provided()
-Status Code: 200
-Response Body:
+22:56:53.342 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Verify Missing API Key
+  Given the Store Purchase API is available          # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request     # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I remove API key                               # com.infinium.stepDefinitions.StorePurchaseSteps.i_remove_api_key()
+Response Status: 200
 {
-    "data": {
-        "billers": [
-            {
-                "id": "ART00MR000MR01",
-                "name": "Airtel Provider"
-            },
-            {
-                "id": "JIO00MR00NAT01",
-                "name": "Jio Provider"
-            },
-            {
-                "id": "BSNLMAH00NAT01",
-                "name": "BSNL Provider"
-            }
-        ]
-    },
-    "success": true
+    "merchantTransactionId": "e0a50af1-0ccb-4ac9-a8fe-61722028c249",
+    "orderId": 11447,
+    "paymentGatewayType": "cashfree",
+    "redirectUrl": "https://payments-test.cashfree.com/links/r9on6she2usg_AAAAAACdhWo",
+    "token": ""
 }
-  When I send a GET request to fetch billers                 # com.infinium.stepDefinitions.FetchBillersSteps.i_send_a_get_request_to_fetch_billers()
-  Then the fetch billers response status code should be 200  # com.infinium.stepDefinitions.FetchBillersSteps.the_fetch_billers_response_status_code_should_be(int)
-Response Time: 128ms
-  And the response time should be less than 100 milliseconds # com.infinium.stepDefinitions.FetchBillersSteps.the_response_time_should_be_less_than(int)
-      java.lang.AssertionError: Response time 128ms exceeded limit 100ms expected [true] but found [false]
+  When I submit the store purchase request           # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+  Then the response status code should be 400 or 401 # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be_or(int,int)
+      java.lang.AssertionError: Expected status code 400 or 401 but found 200 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.infinium.stepDefinitions.FetchBillersSteps.the_response_time_should_be_less_than(FetchBillersSteps.java:152)
-	at âœ½.the response time should be less than 100 milliseconds(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:69)
+	at com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be_or(StorePurchaseSteps.java:128)
+	at âœ½.the response status code should be 400 or 401(file:///C:/Selenium%20framework%20export/Manu/Euronet-API-Test/src/test/resources/features/StorePurchase.feature:52)
 
 --------------------------------------------------------------------------------
 RESULT: FAILED
 --------------------------------------------------------------------------------
 
-10:48:44.777 [TestNG-tests-1] ERROR com.infinium.hooks.TestHooks - Scenario failed: EB-12 Response time check
-10:48:46.791 [TestNG-tests-1] ERROR com.infinium.listeners.TestListener - Test failed: runScenario
-java.lang.AssertionError: Response time 128ms exceeded limit 100ms expected [true] but found [false]
+22:56:53.974 [TestNG-tests-1] ERROR com.infinium.hooks.TestHooks - Scenario failed: Verify Missing API Key
+22:56:55.989 [TestNG-tests-1] ERROR com.infinium.listeners.TestListener - Test failed: runScenario
+java.lang.AssertionError: Expected status code 400 or 401 but found 200 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.10.2.jar:7.10.2]
 	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.10.2.jar:7.10.2]
 	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.10.2.jar:7.10.2]
-	at com.infinium.stepDefinitions.FetchBillersSteps.the_response_time_should_be_less_than(FetchBillersSteps.java:152) ~[test-classes/:?]
-	at ?.the response time should be less than 100 milliseconds(file:///G:/Selenium%20Project/Stan%20Automation/Euronet-API-Test/src/test/resources/features/FetchBillers.feature:69) ~[?:?]
+	at com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be_or(StorePurchaseSteps.java:128) ~[test-classes/:?]
+	at ?.the response status code should be 400 or 401(file:///C:/Selenium%20framework%20export/Manu/Euronet-API-Test/src/test/resources/features/StorePurchase.feature:52) ~[?:?]
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Prevent duplicate store purchase request&quot;, &quot;Store Purchase API&quot;](6)" classname="com.infinium.runners.TestRunner" time="2.832">
+    <system-out><![CDATA[22:56:56.025 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Security @Idempotency
+Scenario: Prevent duplicate store purchase request               # src/test/resources/features/StorePurchase.feature:55
+
+--------------------------------------------------------------------------------
+SCENARIO: Prevent duplicate store purchase request
+--------------------------------------------------------------------------------
+22:56:56.046 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Prevent duplicate store purchase request
+  Given the Store Purchase API is available                      # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request                 # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+Response Status: 200
+{
+    "merchantTransactionId": "4dab4805-b0c3-4593-9b67-a268228d5ac4",
+    "orderId": 11448,
+    "paymentGatewayType": "cashfree",
+    "redirectUrl": "https://payments-test.cashfree.com/links/i9on6smqeusg_AAAAAACdhWo",
+    "token": ""
+}
+  When I submit the store purchase request                       # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+Second Response Status: 400
+  And I immediately submit the same store purchase request again # com.infinium.stepDefinitions.StorePurchaseSteps.i_immediately_submit_the_same_store_purchase_request_again()
+  Then the second response status code should be 409 or 400      # com.infinium.stepDefinitions.StorePurchaseSteps.the_second_response_status_code_should_be_or(int,int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+22:56:56.849 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Prevent duplicate store purchase request
+22:56:58.854 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject purchase with unsupported country code&quot;, &quot;Store Purchase API&quot;](7)" classname="com.infinium.runners.TestRunner" time="2.173">
+    <system-out><![CDATA[22:56:58.857 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Validation
+Scenario: Reject purchase with unsupported country code # src/test/resources/features/StorePurchase.feature:62
+
+--------------------------------------------------------------------------------
+SCENARIO: Reject purchase with unsupported country code
+--------------------------------------------------------------------------------
+22:56:58.865 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject purchase with unsupported country code
+  Given the Store Purchase API is available             # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request        # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I set country code as "US"                        # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_country_code_as(java.lang.String)
+Response Status: 400
+{
+    "error": "Please try again after sometime",
+    "message": "Please try again after sometime",
+    "statusCode": 400
+}
+  When I submit the store purchase request              # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+  Then the response status code should be 400           # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be(int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+22:56:59.021 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject purchase with unsupported country code
+22:57:01.029 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject redirect URL from untrusted domain&quot;, &quot;Store Purchase API&quot;](8)" classname="com.infinium.runners.TestRunner" time="2.415">
+    <system-out><![CDATA[22:57:01.031 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Security
+Scenario: Reject redirect URL from untrusted domain          # src/test/resources/features/StorePurchase.feature:69
+
+--------------------------------------------------------------------------------
+SCENARIO: Reject redirect URL from untrusted domain
+--------------------------------------------------------------------------------
+22:57:01.039 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject redirect URL from untrusted domain
+  Given the Store Purchase API is available                  # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request             # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I set redirect URL as "https://evil-site.com/callback" # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_redirect_url_as(java.lang.String)
+Response Status: 400
+{
+    "error": "Please try again after sometime",
+    "message": "Please try again after sometime",
+    "statusCode": 400
+}
+  When I submit the store purchase request                   # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+  Then the response status code should be 400                # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be(int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+22:57:01.433 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject redirect URL from untrusted domain
+22:57:03.445 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject unsupported PhonePe payment mode&quot;, &quot;Store Purchase API&quot;](9)" classname="com.infinium.runners.TestRunner" time="2.2">
+    <system-out><![CDATA[22:57:03.447 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Validation
+Scenario: Reject unsupported PhonePe payment mode # src/test/resources/features/StorePurchase.feature:76
+
+--------------------------------------------------------------------------------
+SCENARIO: Reject unsupported PhonePe payment mode
+--------------------------------------------------------------------------------
+22:57:03.460 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject unsupported PhonePe payment mode
+  Given the Store Purchase API is available       # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request  # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I set PhonePe payment mode as "Crypto"      # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_phone_pe_payment_mode_as(java.lang.String)
+Response Status: 400
+{
+    "error": "Please try again after sometime",
+    "message": "Please try again after sometime",
+    "statusCode": 400
+}
+  When I submit the store purchase request        # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+  Then the response status code should be 400     # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be(int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+22:57:03.628 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject unsupported PhonePe payment mode
+22:57:05.647 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Block excessive store purchase attempts&quot;, &quot;Store Purchase API&quot;](10)" classname="com.infinium.runners.TestRunner" time="2.854">
+    <system-out><![CDATA[22:57:05.648 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Security @Abuse
+Scenario: Block excessive store purchase attempts                 # src/test/resources/features/StorePurchase.feature:83
+
+--------------------------------------------------------------------------------
+SCENARIO: Block excessive store purchase attempts
+--------------------------------------------------------------------------------
+22:57:05.656 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Block excessive store purchase attempts
+  Given the Store Purchase API is available                       # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request                  # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+Rapid Response Status: 400
+  When I submit the store purchase request multiple times rapidly # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request_multiple_times_rapidly()
+  Then the response status code should be 429 or 400              # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be_or(int,int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+22:57:06.495 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Block excessive store purchase attempts
+22:57:08.501 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject phone number with invalid length&quot;, &quot;Store Purchase API&quot;](11)" classname="com.infinium.runners.TestRunner" time="2.145">
+    <system-out><![CDATA[22:57:08.502 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Validation @PhoneNumber
+Scenario: Reject phone number with invalid length # src/test/resources/features/StorePurchase.feature:89
+
+--------------------------------------------------------------------------------
+SCENARIO: Reject phone number with invalid length
+--------------------------------------------------------------------------------
+22:57:08.509 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject phone number with invalid length
+  Given the Store Purchase API is available       # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request  # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I set phone number as "98765"               # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_phone_number_as(java.lang.String)
+Response Status: 400
+{
+    "error": "Please try again after sometime",
+    "message": "Please try again after sometime",
+    "statusCode": 400
+}
+  When I submit the store purchase request        # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+  Then the response status code should be 400     # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be(int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+22:57:08.632 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject phone number with invalid length
+22:57:10.647 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject phone number containing alphabets&quot;, &quot;Store Purchase API&quot;](12)" classname="com.infinium.runners.TestRunner" time="2.161">
+    <system-out><![CDATA[22:57:10.648 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Validation @PhoneNumber
+Scenario: Reject phone number containing alphabets # src/test/resources/features/StorePurchase.feature:96
+
+--------------------------------------------------------------------------------
+SCENARIO: Reject phone number containing alphabets
+--------------------------------------------------------------------------------
+22:57:10.658 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject phone number containing alphabets
+  Given the Store Purchase API is available        # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request   # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I set phone number as "98AB543210"           # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_phone_number_as(java.lang.String)
+Response Status: 400
+{
+    "error": "Please try again after sometime",
+    "message": "Please try again after sometime",
+    "statusCode": 400
+}
+  When I submit the store purchase request         # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+  Then the response status code should be 400      # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be(int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+22:57:10.793 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject phone number containing alphabets
+22:57:12.810 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject phone number with special characters&quot;, &quot;Store Purchase API&quot;](13)" classname="com.infinium.runners.TestRunner" time="2.162">
+    <system-out><![CDATA[22:57:12.811 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Validation @PhoneNumber
+Scenario: Reject phone number with special characters # src/test/resources/features/StorePurchase.feature:103
+
+--------------------------------------------------------------------------------
+SCENARIO: Reject phone number with special characters
+--------------------------------------------------------------------------------
+22:57:12.817 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject phone number with special characters
+  Given the Store Purchase API is available           # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request      # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I set phone number as "98765@3210"              # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_phone_number_as(java.lang.String)
+Response Status: 400
+{
+    "error": "Please try again after sometime",
+    "message": "Please try again after sometime",
+    "statusCode": 400
+}
+  When I submit the store purchase request            # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+  Then the response status code should be 400         # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be(int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+22:57:12.964 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject phone number with special characters
+22:57:14.973 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Reject phone number with country code prefix&quot;, &quot;Store Purchase API&quot;](14)" classname="com.infinium.runners.TestRunner" time="2.183">
+    <system-out><![CDATA[22:57:14.973 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Validation @PhoneNumber
+Scenario: Reject phone number with country code prefix # src/test/resources/features/StorePurchase.feature:110
+
+--------------------------------------------------------------------------------
+SCENARIO: Reject phone number with country code prefix
+--------------------------------------------------------------------------------
+22:57:14.979 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Reject phone number with country code prefix
+  Given the Store Purchase API is available            # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request       # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I set phone number as "+919876543210"            # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_phone_number_as(java.lang.String)
+Response Status: 400
+{
+    "error": "Please try again after sometime",
+    "message": "Please try again after sometime",
+    "statusCode": 400
+}
+  When I submit the store purchase request             # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request()
+  Then the response status code should be 400          # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be(int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+22:57:15.137 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Reject phone number with country code prefix
+22:57:17.154 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Detect rapid repeated purchase attempts using same phone number&quot;, &quot;Store Purchase API&quot;](15)" classname="com.infinium.runners.TestRunner" time="2.856">
+    <system-out><![CDATA[22:57:17.157 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test started: runScenario
+
+@Regression @StorePurchase @Security @Fraud @PhoneNumber
+Scenario: Detect rapid repeated purchase attempts using same phone number # src/test/resources/features/StorePurchase.feature:117
+
+--------------------------------------------------------------------------------
+SCENARIO: Detect rapid repeated purchase attempts using same phone number
+--------------------------------------------------------------------------------
+22:57:17.162 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Starting scenario: Detect rapid repeated purchase attempts using same phone number
+  Given the Store Purchase API is available                               # com.infinium.stepDefinitions.StorePurchaseSteps.the_store_purchase_api_is_available()
+  Given I prepare a valid store purchase request                          # com.infinium.stepDefinitions.StorePurchaseSteps.i_prepare_a_valid_store_purchase_request()
+  And I set phone number as "8765432138"                                  # com.infinium.stepDefinitions.StorePurchaseSteps.i_set_phone_number_as(java.lang.String)
+Rapid Response Status: 400
+  When I submit the store purchase request multiple times rapidly         # com.infinium.stepDefinitions.StorePurchaseSteps.i_submit_the_store_purchase_request_multiple_times_rapidly()
+  Then the response status code should be 429 or 400                      # com.infinium.stepDefinitions.StorePurchaseSteps.the_response_status_code_should_be_or(int,int)
+--------------------------------------------------------------------------------
+RESULT: PASSED
+--------------------------------------------------------------------------------
+
+22:57:17.997 [TestNG-tests-1] INFO  com.infinium.hooks.TestHooks - Scenario passed: Detect rapid repeated purchase attempts using same phone number
+22:57:20.013 [TestNG-tests-1] INFO  com.infinium.listeners.TestListener - Test passed: runScenario
 ]]></system-out>
   </testcase>
 </testsuite>

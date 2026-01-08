@@ -10,4 +10,5 @@ public class Routes {
     
     // External API routes
     public static String get_fetch_billers_url = "https://stage-api.getstan.app/store-shop-us/api/v1/inventory/euronet/list-billers";
+    public static String store_purchase_url = "https://stage-api.getstan.app/api/v4/phonepe/store/purchase";
 }
